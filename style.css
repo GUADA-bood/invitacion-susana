@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8d7e4;
+    color: #6d2949;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background: #fff8fb;
+    overflow: hidden;
+}
+
+
+/* PORTADA */
+
+.portada {
+    text-align: center;
+    padding: 50px 25px 45px;
+
+    background:
+        radial-gradient(circle at 10% 15%, white, transparent 14%),
+        radial-gradient(circle at 90% 20%, white, transparent 13%),
+        linear-gradient(
+            145deg,
+            #f5bfd4,
+            #ffe9f1,
+            #f3b2cd
+        );
+}
+
+.brillos {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
+}
+
+.invitacion-texto {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    color: #8d3156;
+    margin-bottom: 15px;
+}
+
+.portada h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: .9;
+    color: #d92f68;
+    margin-bottom: 25px;
+}
+
+
+/* FOTO DE SUSANA */
+
+.foto-susana {
+    width: 250px;
+    height: 250px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    padding: 7px;
+
+    background: white;
+
+    box-shadow:
+        0 5px 25px rgba(150, 50, 90, .25);
+
+    overflow: hidden;
+}
+
+.foto-susana img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+}
+
+
+/* RESTO DE PORTADA */
+
+.corazon {
+    font-size: 40px;
+    color: #d9366d;
+    margin-bottom: 10px;
+}
+
+.cumple {
+    display: inline-block;
+
+    background: #e94b7b;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 22px;
+
+    padding: 12px 28px;
+
+    border-radius: 5px;
+
+    margin-bottom: 18px;
+}
+
+.tematica {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d5366b;
+
+    margin-bottom: 18px;
+}
+
+.frase {
+    font-family: Georgia, serif;
+    font-style: italic;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 500px;
+
+    margin: auto;
+
+    color: #70485a;
+}
+
+
+/* DATOS */
+
+.datos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1px;
+
+    background: #edb2c7;
+
+    margin: 25px 20px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.dato {
+    background: #fff8fb;
+
+    text-align: center;
+
+    padding: 25px 10px;
+}
+
+.icono {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.dato h3 {
+    font-size: 14px;
+
+    color: #a72f5b;
+
+    margin-bottom: 12px;
+}
+
+.dato p {
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.dato strong {
+    font-size: 17px;
+}
+
+
+/* BOTONES */
+
+.acciones {
+    padding: 0 20px 30px;
+}
+
+.boton {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 17px 20px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.boton:hover {
+    transform: scale(1.02);
+}
+
+.boton small {
+    font-size: 13px;
+
+    font-weight: normal;
+
+    margin-top: 5px;
+}
+
+.mapa {
+    background: #e94778;
+
+    color: white;
+}
+
+
+/* FORMULARIO */
+
+.confirmacion {
+    margin: 0 20px 30px;
+
+    padding: 35px 25px;
+
+    border: 1px solid #f1aac4;
+
+    border-radius: 20px;
+
+    background: #fff9fb;
+
+    box-shadow:
+        0 5px 20px rgba(200, 70, 110, .1);
+}
+
+.confirmacion h2 {
+    text-align: center;
+
+    color: #d5366b;
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 10px;
+}
+
+.confirmacion > p {
+    text-align: center;
+
+    color: #70485a;
+
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+
+    margin: 15px 0 7px;
+
+    color: #652c45;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #efaec5;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #dd4b79;
+}
+
+.confirmar {
+    margin-top: 25px;
+
+    background: #e94778;
+
+    color: white;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+    margin: 0 20px 30px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: #ffe6ef;
+
+    border-radius: 20px;
+}
+
+.whatsapp h2 {
+    font-family: Georgia, serif;
+
+    color: #d5366b;
+
+    margin-bottom: 10px;
+}
+
+.whatsapp p {
+    margin-bottom: 20px;
+
+    color: #70485a;
+}
+
+.whatsapp-boton {
+    background: #25d366;
+
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 35px 20px 50px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f7c8d9,
+            #ffe9f1
+        );
+
+    color: #8c3156;
+}
+
+footer p:first-child {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    margin-bottom: 10px;
+}
+
+footer p:nth-child(2) {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+footer strong {
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .portada h1 {
+        font-size: 55px;
+    }
+
+    .invitacion-texto {
+        font-size: 19px;
+    }
+
+    .cumple {
+        font-size: 19px;
+    }
+
+    .foto-susana {
+        width: 220px;
+        height: 220px;
+    }
+
+    .datos {
+        grid-template-columns: 1fr;
+    }
+
+    .dato {
+        padding: 18px;
+    }
+
+    .confirmacion {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}

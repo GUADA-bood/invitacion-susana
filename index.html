@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Susana Ponce - Cumpleaños</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <!-- PORTADA -->
+
+        <section class="portada">
+
+            <div class="brillos">✦ ♡ ✦</div>
+
+            <p class="invitacion-texto">
+                Estás invitado/a a celebrar
+            </p>
+
+            <h1>Susana<br>Ponce</h1>
+
+            <!-- FOTO ORIGINAL -->
+            <div class="foto-susana">
+                <img src="susana.jpg" alt="Susana Ponce">
+            </div>
+
+            <div class="corazon">♡</div>
+
+            <div class="cumple">
+                ¡MI CUMPLEAÑOS!
+            </div>
+
+            <p class="tematica">
+                TEMÁTICA ROSA
+            </p>
+
+            <p class="frase">
+                Vamos a compartir una noche llena de alegría,
+                música y buenos momentos ♡
+            </p>
+
+        </section>
+
+
+        <!-- DATOS DEL EVENTO -->
+
+        <section class="datos">
+
+            <div class="dato">
+
+                <div class="icono">📅</div>
+
+                <h3>FECHA</h3>
+
+                <p>
+                    Sábado<br>
+                    <strong>29 de agosto</strong>
+                </p>
+
+            </div>
+
+
+            <div class="dato">
+
+                <div class="icono">🕙</div>
+
+                <h3>HORA</h3>
+
+                <p>
+                    <strong>22:00 hs</strong>
+                </p>
+
+            </div>
+
+
+            <div class="dato">
+
+                <div class="icono">📍</div>
+
+                <h3>DIRECCIÓN</h3>
+
+                <p>
+                    Ing. M. A. Costilla 26<br>
+                    Tafí Viejo
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAPA -->
+
+        <section class="acciones">
+
+            <a
+                class="boton mapa"
+                href="https://www.google.com/maps/search/?api=1&query=Ing.+M.+A.+Costilla+26,+Taf%C3%AD+Viejo"
+                target="_blank">
+
+                📍 VER EN MAPA
+
+                <small>¿Cómo llegar?</small>
+
+            </a>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="confirmacion">
+
+            <h2>
+                ♡ CONFIRMÁ TU ASISTENCIA ♡
+            </h2>
+
+            <p>
+                Tu confirmación es muy importante para organizar
+                todo con amor 💗
+            </p>
+
+
+            <form id="formulario">
+
+                <label for="nombre">
+                    Nombre *
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribí tu nombre"
+                    required>
+
+
+                <label for="apellido">
+                    Apellido *
+                </label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    placeholder="Escribí tu apellido"
+                    required>
+
+
+                <label for="asistencia">
+                    ¿Vas a asistir? *
+                </label>
+
+                <select id="asistencia" required>
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option value="Sí">
+                        Sí, voy 💗
+                    </option>
+
+                    <option value="No">
+                        No voy
+                    </option>
+
+                </select>
+
+
+                <label for="personas">
+                    ¿Cuántas personas asistirán? *
+                </label>
+
+                <input
+                    type="number"
+                    id="personas"
+                    min="1"
+                    max="30"
+                    placeholder="Ej: 2"
+                    required>
+
+
+                <label for="acompanantes">
+                    Nombres de tus acompañantes
+                </label>
+
+                <input
+                    type="text"
+                    id="acompanantes"
+                    placeholder="Separados por coma">
+
+
+                <label for="mensaje">
+                    ¿Querés dejarle un mensaje a Susana?
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    rows="4"
+                    placeholder="Escribí tu mensaje..."></textarea>
+
+
+                <button
+                    type="submit"
+                    class="boton confirmar">
+
+                    💗 ENVIAR CONFIRMACIÓN
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- WHATSAPP -->
+
+        <section class="whatsapp">
+
+            <h2>
+                ♡ O CONFIRMÁ POR WHATSAPP ♡
+            </h2>
+
+            <p>
+                También podés confirmar directamente por WhatsApp
+            </p>
+
+            <a
+                href="https://wa.me/543813013387"
+                target="_blank"
+                class="boton whatsapp-boton">
+
+                💬 ENVIAR WHATSAPP
+
+            </a>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <footer>
+
+            <p>
+                ¡No te olvides! 💗
+            </p>
+
+            <p>
+                Vestite de rosa y vení a disfrutar
+                de una noche inolvidable.
+            </p>
+
+            <strong>
+                ♡ Susana ♡
+            </strong>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
