@@ -22,53 +22,46 @@ formulario.addEventListener("submit", function(event) {
     const mensajePersonal =
         document.getElementById("mensaje").value.trim();
 
-
     const numeroWhatsApp = "543813013387";
 
-
     let mensaje =
-        "Hola Susana 💗\n\n" +
-        "Quiero confirmar mi asistencia a tu cumpleaños 🎂\n\n" +
+        "Hola Susana \u{1F497}\n\n" +
+        "Quiero confirmar mi asistencia a tu cumpleaños \u{1F382}\n\n" +
 
-        "👤 Nombre: " +
+        "\u{1F464} Nombre: " +
         nombre + " " +
         apellido + "\n" +
 
-        "💗 ¿Asiste?: " +
+        "\u{1F497} ¿Asiste?: " +
         asistencia + "\n" +
 
-        "👥 Cantidad de personas: " +
+        "\u{1F465} Cantidad de personas: " +
         personas + "\n";
-
 
     if (acompanantes !== "") {
 
         mensaje +=
-            "👫 Acompañantes: " +
+            "\u{1F46B} Acompañantes: " +
             acompanantes +
             "\n";
     }
 
-
     if (mensajePersonal !== "") {
 
         mensaje +=
-            "\n💌 Mensaje: " +
+            "\n\u{1F48C} Mensaje: " +
             mensajePersonal +
             "\n";
     }
 
-
     mensaje +=
-        "\n¡Nos vemos! 💕";
-
+        "\n¡Nos vemos! \u{1F495}";
 
     const url =
         "https://wa.me/" +
         numeroWhatsApp +
         "?text=" +
         encodeURIComponent(mensaje);
-
 
     window.open(url, "_blank");
 
